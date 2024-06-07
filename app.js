@@ -118,7 +118,7 @@ function buildTaskElement(task, index) {
   return taskElement
 
 }
-
+  
 
 
 

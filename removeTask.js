@@ -14,7 +14,7 @@ function taskDeleted(btnDeletedElement) {
 
 
 
-
+ 
 
 /*
 async function taskDeleted(btnDeletedElement) {
