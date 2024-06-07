@@ -9,7 +9,7 @@ function logInBtnClicked() {
 
     setTimeout(displayApp, 1000)
 
-}
+} 
 
 function displayApp() {
     document.querySelector(".todo-container").style.display = "block";
