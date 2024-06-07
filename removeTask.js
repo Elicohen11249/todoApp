@@ -4,7 +4,7 @@ function taskDeleted(btnDeletedElement) {
   tasks[id].deleted = true;
 
   let confirming =   confirm("Are you sure you want to delete it?");
- 
+  
   if (confirming == true) {
        displayTasks();
     } else return

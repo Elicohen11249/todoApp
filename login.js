@@ -6,7 +6,7 @@ function logInBtnClicked() {
     let userName = inputEl.value
 
     document.querySelector("#Login-btn").innerText = "Logging In..."
-
+ 
     setTimeout(displayApp, 1000)
 
 } 
