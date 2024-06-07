@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <script src="./login.js"></script>
+    <script src="./app.js"></script>
+    <script src="./removeTask.js"></script>
+    <script src="./base.js"></script>
+    <script src="./basic.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="Wellcome">
+        <div id="time">
+            <p> <span id="timeToSunset">h:mm</span> To sunset </p>
+        </div>
+        <input type="text" placeholder="Please enter your name" id="user-Name-input" />
+        <button id="Login-btn" onclick="logInBtnClicked()" >Login</button>
+    </div>
+    <div class="todo-container" style="display: none;">
+        <h1 id="disTitle"></h1>
+        <div class="input-container">
+            <input type="text" id="new-task" placeholder="add a new task" />
+            <button class="add" onclick="addTaskBtnClicked()">+</button>
+        </div>
+        <section class="task-list" id="todo-list"></section>
+        <section class="completed" id="done-list"></section>
+    </div>
+</body>
+
+</html>
+
+
