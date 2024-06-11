@@ -22,15 +22,12 @@ let tasks = []
 async function main() {
 
   let usersName = document.querySelector("#user-Name-input").value
-
-  let response = await fetch('http://localhost:3000/tasks', {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        userName: usersName
-
-      })
-    })
+  let response = await fetch(`http://localhost:3000/tasks/${usersName}`, {
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+  )
   tasks = await response.json()
   console.log(tasks)
 
