@@ -20,7 +20,12 @@ app.use((err,req,res,next)=>{
 
 const pgp = pgPromise()
 const db = pgp({
-   
+    host: 'ep-dawn-bar-a6bi78xb.us-west-2.retooldb.com',
+    port: 5432,
+    database: "retool",
+    user: 'retool',
+    password: '9SOCrxPsjU0Y',
+    ssl: true
 })
 
 
@@ -38,9 +43,9 @@ function rootHandler(req, res) {
 }
 
 
-app.get('/tasks', async (req, res) => {
+app.get('/tasks/:usersName', async (req, res) => {
     const result = await db.many('select * from task where deleted_at is null and user_id = (SELECT id  FROM person  WHERE name = ${userName})',{
-userName:req.body.userName
+userName:req.params.usersName
     })
     res.json(result.map(task => ({
         id: task.id,
