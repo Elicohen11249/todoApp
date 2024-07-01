@@ -11,7 +11,7 @@ export default function Task({ task, updateTask, deleteTask }) {
 
         await fetch(`http://localhost:3000/tasks/${id}/${userName}`, {
             method: 'PATCH'
-        })
+        }) 
 
         updateTask(task.id)
     }

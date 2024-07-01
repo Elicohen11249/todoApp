@@ -22,7 +22,7 @@ export default function Todos() {
     function deleteTask() {
         setDeleted(() => deleted + 1)
     }
-
+ 
     function updateTasks(task) {
         setTasks(tasks => [...tasks, task])
     }

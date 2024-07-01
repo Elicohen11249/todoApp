@@ -14,7 +14,7 @@ export default function NewTask({ updateTasks }) {
                 title: event.target.elements.newTask.value,
                 usersName: user.userName
             })
-        })
+        }) 
         const result = await response.json()
          console.log(response)
          console.log(result)

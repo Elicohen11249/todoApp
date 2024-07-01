@@ -11,4 +11,4 @@ export default function Title(){
 
         <h1>Welcome to our To Do App!</h1>
     )
-}
+} 
